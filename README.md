@@ -1,5 +1,7 @@
 # RSE Conservation Evidence Task
 
+The app is in the [evidence](evidence) folder.
+
 
 ### Importing data
 
@@ -16,6 +18,10 @@ or use the script's function `import_evidence_from_csv` in your own script.
 The view of the `Evidences` table on the Admin page contains a filter for the effectiveness score (1+, 2+, etc.) and
 an action to show the average effectiveness score by species group (shown as a message).
 
+Relevant code is in [evidence/admin.py](evidence/admin.py).
+
 ### Deployment plan
 
-
+I have included a Jupyter notebook ([web-app set-up.ipynb](notebooks/web-app%20set-up.ipynb)) that is
+a **redacted** version what I used to deploy Arete's Django app on Azure. This goes step-by-step and covers
+some details about configuration, security, etc.
