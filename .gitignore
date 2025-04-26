@@ -9,7 +9,7 @@ sitestatic/**
 !sitestatic/README.md
 
 # Other
-.idea/*
+*/.idea/*
 *.iml
 sitestatic/admin/*
 
