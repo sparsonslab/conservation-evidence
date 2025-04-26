@@ -1,0 +1,20 @@
+# The database.
+db.sqlite3
+
+# All migration files.
+**/migrations/*.py
+
+# Static file collection folder (created by collectstatic command)
+sitestatic/**
+!sitestatic/README.md
+
+# Other
+.idea/*
+*.iml
+sitestatic/admin/*
+
+# Build and dits
+build/**
+dist/**
+aretesigclouddb.egg-info/**
+venv/**
