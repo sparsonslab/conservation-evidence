@@ -20,6 +20,8 @@ an action to show the average effectiveness score by species group (shown as a m
 
 Relevant code is in [evidence/admin.py](evidence/admin.py).
 
+![image](Screenshot.png)
+
 ### Deployment plan
 
 I have included a Jupyter notebook ([web-app set-up.ipynb](notebooks/web-app%20set-up.ipynb)) that is
