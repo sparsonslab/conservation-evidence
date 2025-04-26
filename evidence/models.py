@@ -18,7 +18,7 @@ class Evidence(Model):
 
     location = CharField(max_length=100)
 
-    effectiveness = IntegerField()
+    effectiveness_score = IntegerField()
 
     evidence_type = IntegerField(choices=evidence_types, default=1)
 
