@@ -96,5 +96,5 @@ def import_evidence_from_csv(path):
             obj.save()
 
 
-# The path of the CSV file.
+# Import the CSV,
 import_evidence_from_csv("data/Task sheet.csv")
