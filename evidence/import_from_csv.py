@@ -25,17 +25,17 @@ def string_to_field(cell, field):
     """
     if isinstance(field, CharField):
         return str(cell)
-    elif isinstance(field, IntegerField):
+
+    if isinstance(field, IntegerField):
         if field.choices:
             for i, k in field.choices:
                 if k == cell:
                     return i
             return None
-        else:
-            try:
-                return int(cell)
-            except ValueError:
-                return None
+        try:
+            return int(cell)
+        except ValueError:
+            return None
     return None
 
 
