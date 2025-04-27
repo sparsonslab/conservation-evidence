@@ -79,20 +79,20 @@ def import_evidence_from_csv(path):
 
             # For a row of data, get the table values converted from
             # string to the field's type.
-            kwargs = {
+            field_values = {
                 field: string_to_field(value, field_types[field])
                 for field, value in zip(columns, row)
                 if(field in field_types)
             }
 
             # If some row values could not be converted, warn.
-            incorrect_columns = {field for field, value in kwargs.items() if value is None}
+            incorrect_columns = {field for field, value in field_values.items() if value is None}
             if incorrect_columns:
                 print(f"Row {i + 1}: Please provide a correct values for {incorrect_columns}.")
                 continue
 
             # Create the Evidence object and save.
-            obj = Evidence(**kwargs)
+            obj = Evidence(**field_values)
             obj.save()
 
 
